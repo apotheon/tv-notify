@@ -23,7 +23,7 @@ end
 # Get show listings.
 exit unless settings[:show]
 
-case settings[:provider]
+case settings[:provider].downcase
 when 'locatetv'
   listings = TVNotify::LocateTV.get_show_listings(settings[:show])
 
