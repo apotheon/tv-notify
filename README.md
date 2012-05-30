@@ -16,6 +16,10 @@ gems, just run the `bundle` command. The following gems are installed.
   - Nokogiri
   - Chronic
 
+You should **not** install these gems manually. There are some other gems
+that need to be installed for them to work. And some gems are installed
+from their Git source.
+
 ## Usage
 
 TV Notify uses a YAML configuration file. An example configuration file is
