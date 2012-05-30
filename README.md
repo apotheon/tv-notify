@@ -29,7 +29,7 @@ as follows.
     show: How I Met Your Mother
 
     # The TV Provider (See above list.)
-    provider: locatetv
+    provider: LocateTV
 
     # The time within the show to display the notifications (in seconds.)
     time: 600
