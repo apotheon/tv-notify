@@ -5,8 +5,7 @@ require 'net/http'
 require 'chronic'
 require 'uri'
 
-def require_provider provider
-  require_relative "tv-notify/#{provider}.rb"
+# Require all providers.
+Dir[File.expand_path('tv-notify/*.rb', File.dirname(__FILE__))].each do |f|
+  require f
 end
-
-require_provider :locatetv
