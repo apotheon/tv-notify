@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Tv-notify by dunsmoreb</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/dunsmoreb/tv-notify">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Tv-notify</h1>
+            <h2>A TV notification program.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/dunsmoreb/tv-notify/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/dunsmoreb/tv-notify/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h2>TV Notify</h2>
+
+<p>TV Notify notifies you about your favorite upcomming programs. It queries
+a provider of your choice for the upcomming listings in your area.</p>
+
+<p>Currently, the supported providers are.</p>
+
+<ul>
+<li>LocateTV</li>
+</ul><h2>Requirements</h2>
+
+<p>The only real requirement is Ruby 1.9.1 or higher. To install the required
+gems, just run the <code>bundle</code> command. The following gems are installed.</p>
+
+<ul>
+<li>Libnotify</li>
+<li>Nokogiri</li>
+<li>Chronic</li>
+</ul><p>You should <strong>not</strong> install these gems manually. There are some other gems
+that need to be installed for them to work. And some gems are installed
+from their Git source.</p>
+
+<h2>Usage</h2>
+
+<p>TV Notify uses a YAML configuration file. An example configuration file is
+as follows.</p>
+
+<div class="highlight">
+<pre>    <span class="c1"># The TV Show</span>
+    <span class="l-Scalar-Plain">show</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">How I Met Your Mother</span>
+
+    <span class="c1"># The TV Provider (See above list.)</span>
+    <span class="l-Scalar-Plain">provider</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">locatetv</span>
+
+    <span class="c1"># The time within the show to display the notifications (in seconds.)</span>
+    <span class="l-Scalar-Plain">time</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">600</span>
+</pre>
+</div>
+
+
+<p>Note that a configuration file <strong>is required</strong> for TV Notify. One you have,
+your configuration file you can run TV Notify as follows.</p>
+
+<pre><code>ruby /path/to/tv-notify.rb /path/to/config.yml
+</code></pre>
+
+<h2>Contributing A Provider</h2>
+
+<p>If LocateTV does not work for you, you can write your own provider and tie
+it in. Your provider should be similar to the LocateTV provider, located in
+<code>lib/tv-notify/locatetv.rb</code>.</p>
+
+<p>While your provider does not need to implement the same methods as the
+LocateTV provider; it does need to implement the <code>get_show_listings</code> method.</p>
+
+<p>Once you have your provider, stop. Don't do anything else and open a pull
+request with the TV Notify repository. We will configure the rest. But thanks
+for making a provider for us.</p>
+
+<h2>Contact</h2>
+
+<p>You can contact me <a href="https://github.com/dunsmoreb">through Github</a> or by email. Thanks for using TV Notify!</p>
+
+<p>Bryan Dunsmore<br><a href="mailto:dunsmoreb@gmail.com">dunsmoreb@gmail.com</a></p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/dunsmoreb">dunsmoreb</a> can be found on <a href="https://github.com/dunsmoreb/tv-notify">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
