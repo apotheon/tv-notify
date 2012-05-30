@@ -52,7 +52,7 @@ for making a provider for us.
 
 You can contact me [through Github][1] or by email. Thanks for using TV Notify!
 
-  Bryan Dunsmore
+  Bryan Dunsmore  
   dunsmoreb@gmail.com
 
   [1]: https://github.com/dunsmoreb
