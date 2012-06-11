@@ -47,8 +47,8 @@
 
       <section id="main_content">
 
-<p>TV Notify notifies you about your favorite upcomming programs. It queries
-a provider of your choice for the upcomming listings in your area.</p>
+<p>TV Notify notifies you about your favorite upcoming programs. It queries
+a provider of your choice for the upcoming listings in your area.</p>
 
 <p>Currently, the supported providers are.</p>
 
@@ -64,7 +64,7 @@ gems, just run the <code>bundle</code> command. The following gems are installed
 <li>Nokogiri</li>
 <li>Chronic</li>
 </ul><p>You should <strong>not</strong> install these gems manually. There are some other gems
-that need to be installed for them to work. And some gems are installed
+that need to be installed for them to work, and some gems are installed
 from their Git source.</p>
 
 <h2>Usage</h2>
@@ -85,8 +85,8 @@ as follows.</p>
 </div>
 
 
-<p>Note that a configuration file <strong>is required</strong> for TV Notify. One you have,
-your configuration file you can run TV Notify as follows.</p>
+<p>Note that a configuration file <strong>is required</strong> for TV Notify. Once you have
+your configuration file, you can run TV Notify as follows.</p>
 
 <pre><code>ruby /path/to/tv-notify.rb /path/to/config.yml
 </code></pre>
@@ -98,9 +98,9 @@ it in. Your provider should be similar to the LocateTV provider, located in
 <code>lib/tv-notify/locatetv.rb</code>.</p>
 
 <p>While your provider does not need to implement the same methods as the
-LocateTV provider; it does need to implement the <code>get_show_listings</code> method.</p>
+LocateTV provider, it does need to implement the <code>get_show_listings</code> method.</p>
 
-<p>Once you have your provider, stop. Don't do anything else and open a pull
+<p>Once you have your provider, stop. Don't do anything else; just open a pull
 request with the TV Notify repository. We will configure the rest. But thanks
 for making a provider for us.</p>
 
